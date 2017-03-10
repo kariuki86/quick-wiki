@@ -1,0 +1,190 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300");
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../sass/screen.scss */
+body {
+  font-family: 'Comfortaa', cursive;
+  background: #434343;
+  color: white;
+}
+/* line 18, ../sass/screen.scss */
+body .list-group-item {
+  background: #363636;
+  transition: border 0.25s ease;
+}
+/* line 21, ../sass/screen.scss */
+body .list-group-item:hover, body .list-group-item:focus {
+  border-left: solid 1em #FFB800;
+}
+
+/* line 28, ../sass/screen.scss */
+h1 i.fa {
+  font-size: 3em;
+}
+
+/* line 32, ../sass/screen.scss */
+.hide {
+  display: none;
+}
+
+/* line 36, ../sass/screen.scss */
+a,
+a:visited {
+  color: #C84CDE;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+/* line 40, ../sass/screen.scss */
+a:hover,
+a:visited:hover {
+  color: #e4a6ef;
+  text-decoration: none;
+}
+
+/* line 47, ../sass/screen.scss */
+.searchmatch {
+  color: #C84CDE;
+}
+
+/* line 51, ../sass/screen.scss */
+#search-section {
+  margin-top: 3em;
+}
+/* line 53, ../sass/screen.scss */
+#search-section h1:first-child {
+  margin-bottom: 2em;
+}
+
+/* line 58, ../sass/screen.scss */
+#wiki-list {
+  border: solid 0.5em #00E061;
+}
+/* line 60, ../sass/screen.scss */
+#wiki-list a {
+  color: inherit;
+}
+
+/* line 65, ../sass/screen.scss */
+#magnifying-glass {
+  position: relative;
+  display: block;
+  margin: 0.5em auto 5em;
+  width: 50px;
+  height: 50px;
+  border: solid 0.5em #FFB800;
+  background: transparent;
+  border-radius: 50%;
+  transition: all ease-out 0.25s 0.25s;
+}
+/* line 74, ../sass/screen.scss */
+#magnifying-glass:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  right: -5px;
+  height: 30px;
+  width: 0;
+  border-left: solid 0.5em #FFB800;
+  transform: rotate(-35deg);
+}
+/* line 84, ../sass/screen.scss */
+#magnifying-glass input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  border: none;
+}
+/* line 92, ../sass/screen.scss */
+#magnifying-glass.glass-focus {
+  width: 75%;
+  height: 3em;
+  border-radius: 24px;
+}
+/* line 96, ../sass/screen.scss */
+#magnifying-glass.glass-focus:after {
+  height: 0;
+  border: none;
+}
+/* line 100, ../sass/screen.scss */
+#magnifying-glass.glass-focus input {
+  background: gainsboro;
+  border-radius: 24px;
+}
+
+/* line 107, ../sass/screen.scss */
+#results-close {
+  margin-bottom: 1em;
+}
+
+/* line 111, ../sass/screen.scss */
+#search-section, #results-section {
+  margin-bottom: 5em;
+}
