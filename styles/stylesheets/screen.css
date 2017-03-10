@@ -182,9 +182,10 @@ a:visited:hover {
 /* line 107, ../sass/screen.scss */
 #results-close {
   margin-bottom: 1em;
+  font-size: 3em;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 #search-section, #results-section {
   margin-bottom: 5em;
 }
